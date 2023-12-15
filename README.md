@@ -6,7 +6,7 @@ This sample will allow you to deploy a Generative AI text-to-image bot to your A
 
 ## Prerequisites
 
-- Access to Amazon Bedrock, and the **stability.stable-diffusion-xl-v0** model enabled 
+- Access to Amazon Bedrock, and the **stability.stable-diffusion-xl-v1** model enabled 
 - An existing AWS Wickr bot username and password
 - A supported host with Docker CE installed. This repo was tested on Ubuntu 22.04
 - IAM credentials configured on the host in the `~/.aws/config` and `~/.aws/credentials` file (see [here](https://docs.aws.amazon.com/cli/latest/reference/configure/) for details). The user must have the following IAM policy at a minimum (update with your Bedrock region):
@@ -21,7 +21,7 @@ This sample will allow you to deploy a Generative AI text-to-image bot to your A
                 "bedrock:InvokeModel"
             ],
             "Resource": [
-                "arn:aws:bedrock:<region>::foundation-model/stability.stable-diffusion-xl-v0"
+                "arn:aws:bedrock:<region>::foundation-model/stability.stable-diffusion-xl-v1"
             ]
         }
     ]
