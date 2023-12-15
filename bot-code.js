@@ -86,7 +86,7 @@ async function createResponse(message, vGroupID) {
     steps: 30
   });
   
-  const modelId = 'stability.stable-diffusion-xl-v0';
+  const modelId = 'stability.stable-diffusion-xl-v1';
   
   const invokeOptions = {
     body,
